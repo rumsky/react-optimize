@@ -18,7 +18,7 @@ class ShouldNotUpdate extends React.Component {
     render() {
         return (
             <p>
-                I should be rendered only {(this.props.fiveTime.a ? this.props.fiveTime.a : 0) / 5 + 1} time. actual times
+                I should be rendered only {(this.props.fiveTime ? this.props.fiveTime : 0) / 5 + 1} time. actual times
                 rendered: {++this.counter}
             </p>
         )

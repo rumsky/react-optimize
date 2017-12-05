@@ -20,7 +20,7 @@ class ShouldNotUpdateBaseHOC extends React.Component{
         return (
             <div>
                 <p>
-                    I should be rendered only {(this.props.fiveTime.a ? this.props.fiveTime.a : 0) / 5 + 1} time. actual times
+                    I should be rendered only {(this.props.fiveTime ? this.props.fiveTime : 0) / 5 + 1} time. actual times
                     rendered: {++this.counter}
                 </p>
                 <a href="https://github.com/NoamELB/shouldComponentUpdate-Children" target="_blank">查看另外两种使用方法</a>

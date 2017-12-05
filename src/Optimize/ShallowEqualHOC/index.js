@@ -75,16 +75,16 @@ export function shallowEqualWithoutReactElements(thisProps, nextProps) {
             if (thisProps[propName] !== nextProps[propName] && !isReactElement(thisProps[propName])) {
                 // No need to check nextProps[propName] as well, as we know they are not equal
                 equals = false;
-                console.log(`shallowEqualWithoutReactElements return ${equals}, 
-                thisProps is ${(thisProps.fiveTime.a)} 
-                nextProps is ${(nextProps.fiveTime.a)}`);
+              /*  console.log(`shallowEqualWithoutReactElements return ${equals},
+                thisProps is ${(thisProps.fiveTime)} 
+                nextProps is ${(nextProps.fiveTime)}`);*/
                 break;
             }
         }
     }
-    console.log(`shallowEqualWithoutReactElements return ${equals}, 
-                thisProps is ${(thisProps.fiveTime.a)} 
-                nextProps is ${(nextProps.fiveTime.a)}`);
+   /* console.log(`shallowEqualWithoutReactElements return ${equals},
+                thisProps is ${(thisProps.fiveTime)} 
+                nextProps is ${(nextProps.fiveTime)}`);*/
     return equals;
 }
 

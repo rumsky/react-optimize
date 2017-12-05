@@ -10,7 +10,7 @@ class App extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {isOpen: false,fiveTime:{a:0}};
+        this.state = {isOpen: false};
         this.toggle = () => this.setState(s => ({isOpen: !s.isOpen}));
 
     }
@@ -22,7 +22,7 @@ class App extends Component {
     callMe = () => {
         counteri++;
         if (counteri % 5 === 0) {
-            this.setState({fiveTime: {a:counteri}});
+            this.setState({fiveTime: counteri});
         }
         console.log(counteri);
         console.log(counteri % 5);
